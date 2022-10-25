@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oz eBook || Conquer the knowledge gap with books</title>
+    <meta name="title" content="Oz eBook || Conquer the knowledge gap with books">
+    <meta name="description" content="An ebook website where you get access to thousands of books to increase your 
+    knowledge and gives you access to book reviews">
+    <link rel="shortcut icon" href="./asset/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="asset/style.css">
+
+    <link rel="preload" as="image" href="./asset/images/hero-banner.gif">
+</head>
+<body id="body">
+
+    <!-- Header Start -->
+    <header id="header" class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">Oz eBook</a>
+
+            <nav id="navbar" class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#hero" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#benefit" class="navbar-link" data-nav-link>Benefit</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#chapter" class="navbar-link" data-nav-link>Chapter</a>
+                    </li>
+                    <!-- <li class="navbar-item">
+                        <a href="#preview" class="navbar-link" data-nav-link>Preview</a>
+                    </li> -->
+                    <li class="navbar-item">
+                        <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#author" class="navbar-link" data-nav-link>Author</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#achievment" class="navbar-link" data-nav-link>Achievement</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+                <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+            </button>
+        </div>
+    </header>
+    <!--Header Ends-->
+
+    <!--Main Content Starts-->
+    <main>
+        <article>
+
+            <!--Hero Starts -->
+            <section class="section hero" id="hero" aria-label="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <p class="section-subtitle">
+                            Reviews, Summaries, Downloads
+                        </p>
+
+                        <h1 class="h1 hero-title">Access a deep well of Knowledge in Books</h1>
+
+                        <p class="section-text">
+                            Love books like i do? Here's your hub 
+                        </p>
+
+                    </div>
+
+                    <div class="hero-banner has-before">
+                        <img src="./asset/images/hero-banner.gif" width="250"  height="419" alt="Novel Cover of Fellowship of the Rings " class="w-100">
+
+                        <!-- <button class="play-btn has-before" aria-label="play video" >
+                            <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+                        </button> -->
+                    </div>
+
+                </div>
+            </section>
+            <!-- Hero Ends -->
+
+            <!-- Benefits Starts -->
+                <section class="section benefits" id="benefit" aria-label="benefits">
+                    <div class="container">
+                        <div class="grid-list">
+                            <li class="benefits-content">
+                                <h2 class="h2 section-title">What <span style="display: inline"; id="bookoftheweek" class="bookoftheweek">"Book of the Week"</span> offers</h2>
+
+                                <p class="section-text">Oz Book of the week -- <span style="display: inline"; id="bookoftheweeknumber" class="bookoftheweeknumber"></span> </p>
+                            </li>
+
+                            <li>
+                                <!-- <div class="benefits-card has-before has-after">
+                                    <div class="card-icon">
+                                        <img src="./asset/images/benefits-2.svg" width="40" height="40" class="" loading="lazy" alt="Motivation">
+                                    </div>
+                                </div> -->
+
+                                <h3 class="h3 card-title">Motivation</h3>
+
+                                <p class="card-text">
+                                    <br> Even the smallest person can change the course of the future. Never underestimate yourself. You never know the impact of the work that you do.
+                                </p>
+
+                                <!-- <a href="#" class="btn-link">
+                                    <span class="span">Read More</span>
+
+                                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                </a> -->
+                            </li>
+
+                            <li>
+                                <!-- <div class="benefits-card has-before has-after">
+                                    <div class="card-icon">
+                                        <img src="./asset/images/benefits-1.svg" width="40" height="40" class="" loading="lazy" alt="Experience">
+                                    </div>
+                                </div> -->
+
+                                <h3 class="h3 card-title">Experience</h3>
+
+                                <p class="card-text">
+                                    <br> This is the height of high fantasy. It gives it's readers a very pleasant reading experience
+                                    filled with suspense and creatures from diffrent races
+                                </p>
+
+                                <!-- <a href="#" class="btn-link">
+                                    <span class="span">Read More</span>
+
+                                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                </a> -->
+                            </li>
+
+
+                            <!-- <li>
+                                <div class="benefits-card has-before has-after">
+                                    <div class="card-icon">
+                                        <img src="./asset/images/benefits-3.svg" width="40" height="40" class="" loading="lazy" alt="Goals">
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">Lesson</h3>
+
+                                <p class="card-text">
+                                    All that is gold does not glitter. Not all those who wander are lost.
+                                </p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Read More</span>
+
+                                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li> -->
+
+                            <!-- <li>
+                                <div class="benefits-card has-before has-after">
+                                    <div class="card-icon">
+                                        <img src="./asset/images/benefits-4.svg" width="40" height="40" class="" loading="lazy" alt="Vision">
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">Vision</h3>
+
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, adipisci! Ab, soluta?
+                                </p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Read More</span>
+
+                                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="benefits-card has-before has-after">
+                                    <div class="card-icon">
+                                        <img src="./asset/images/benefits-5.svg" width="40" height="40" class="" loading="lazy" alt="Mission">
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">Mission</h3>
+
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, adipisci! Ab, soluta?
+                                </p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Read More</span>
+
+                                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="benefits-card has-before has-after">
+                                    <div class="card-icon">
+                                        <img src="./asset/images/benefits-6.svg" width="40" height="40" class="" loading="lazy" alt="Strategy">
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">Strategy</h3>
+
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, adipisci! Ab, soluta?
+                                </p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Read More</span>
+
+                                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li> -->
+
+                        </div>
+                    </div>
+                </section>
+            <!--Benefits Ends-->
+
+            <!--Chapter Starts-->
+                <section class="section chapters" id="chapter">
+                    <div class="container">
+                        <p class="section-subtitle">Chapters</p>
+
+                        <h2 class="h2 section-title has-underline">
+                            Chapters <span style="display: inline"; id="bookchapters" class="bookchapters"></span>
+                            <span class="span has-before"></span>
+                        </h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 1</p>
+                                    <h3 class="h3 card-title">A long Expected Party</h3>
+                                    <p class="card-text"><br> Bilbo Baggins of Bag End announces that he will be celebrating his eleventy-first birthday 
+                                        with a party which greatly excites the Hobbits of Hobbiton.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 2</p>
+                                    <h3 class="h3 card-title">The Shadow of the Past</h3>
+                                    <p class="card-text"><br> Gandalf proves that Frodo's ring is the ONE RING and Gollum is slimy and murderous</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 3</p>
+                                    <h3 class="h3 card-title">Three is Company</h3>
+                                    <p class="card-text"><br> Frodo Baggins sells Bag End, and officially is going to move to a house at Crickhollow in the area beyond Bucklebury in Buckland; 
+                                        he actually plans to disappear without causing too much of a fuss</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 4</p>
+                                    <h3 class="h3 card-title">A shortcut to Mushrooms</h3>
+                                    <p class="card-text"><br> Frodo and company meet Farmer Maggot while taking a short cut, and he gives them some of his prized mushrooms. Merry joins them at the end.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 5</p>
+                                    <h3 class="h3 card-title">A conspiracy Unmasked</h3>
+                                    <p class="card-text"><br> Frodo is about to tell Merry and Pippin about his quest, who he had previously believed not to know about it, and they tell him that they had known much of it all along. They also meet Fredegar Bolger.</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 6</p>
+                                    <h3 class="h3 card-title">The Old Forest</h3>
+                                    <p class="card-text"><br> Although trying to avoid it, the Hobbits get lost and travel to the River Withywindle, the "queerest part of the whole wood". Merry and Pippin are trapped inside Old Man Willow, and are freed only when Tom Bombadil arrives.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 7</p>
+                                    <h3 class="h3 card-title">In the house of Tom Bombadil</h3>
+                                    <p class="card-text"><br> Tom Bombadil knows much about the Hobbits who are staying at his home, and even tries on the Ring, yet it does not have any effect on him. Frodo tries on the Ring then to see if it 'works', and Tom Bombadil is also able to see him while he has the Ring on.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 8</p>
+                                    <h3 class="h3 card-title">Fog on the Barrow Downs</h3>
+                                    <p class="card-text"><br> Traveling through the Barrow-downs, Frodo, Sam, Merry, and Pippin are imprisoned by Barrow-wights, and are soon rescued again by Tom Bombadil. The hobbits are each given a Dagger of Westernesse by Tom, found in the treasure of the wight's barrow.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="chapters-card">
+                                    <p class="card-subtitle">Chapter 9</p>
+                                    <h3 class="h3 card-title">At the sight of the Prancing Pony</h3>
+                                    <p class="card-text"><br> The Hobbits reach the The Prancing Pony inn at Bree, where Frodo uses a false name, Underhill. Later, after singing a song on a table, he trips and accidentally puts the Ring on his finger, disappearing, which causes a commotion.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            <!--Chapters Ends -->
+
+            <!--Preview Start-->
+            <!-- <section class="section preview" id="preview" aria-label="preview">
+                <div class="container">
+                    <p class="section-subtitle">Chapter Preview</p>
+                    <h2 class="h2 section-title has-underline">Get these chapters free!
+                    <span class="span has-before"></span>
+                    </h2>
+
+                    <ul class="tab-list">
+                        
+                        <li>
+                            <div class="tab-card active" data-tab-card>
+                                <h3 class="h3 tab-text">Chapter 1</h3>
+                                <img src="./asset/images/preview-1.png" width="820" height="630" loading="lazy" alt="Image of Chapter 1 Preview" class="w-100">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tab-card" data-tab-card>
+                                <h3 class="h3 tab-text">Chapter 2</h3>
+                                <img src="./asset/images/preview-2.png" width="820" height="630" loading="lazy" alt="Image of Chapter 1 Preview" class="w-100">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tab-card" data-tab-card>
+                                <h3 class="h3 tab-text">Chapter 3</h3>
+                                <img src="./asset/images/preview-3.png" width="820" height="630" loading="lazy" alt="Image of Chapter 1 Preview" class="w-100">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tab-card" data-tab-card>
+                                <h3 class="h3 tab-text">Chapter 4</h3>
+                                <img src="./asset/images/preview-4.png" width="820" height="630" loading="lazy" alt="Image of Chapter 1 Preview" class="w-100">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tab-card" data-tab-card>
+                                <h3 class="h3 tab-text">Chapter 5</h3>
+                                <img src="./asset/images/preview-5.png" width="820" height="630" loading="lazy" alt="Image of Chapter 1 Preview" class="w-100">
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </section> -->
+            <!--Preview End-->
+
+            <!--Pricing Starts -->
+            <section class="section pricing" id="pricing" aria-label="pricing">
+                <div class="container">
+                    <p class="section-subtitle">Pricing</p>
+                    <h2 class="section-title has-underline">
+                        Pricing on Amazon
+                        <span class="span has-before"></span>
+
+                        <ul class="grid-list">
+                            <li>
+                                <div class="pricing-card">
+                                    <h3 class="h3 card-title">Paperback</h3>
+                                    <data class="price" value="11">$10.09</data>
+                                    <ul class="pricing-card-list">
+                                        <li class="card-item">
+                                            <p class="card-text">432 pages</p>
+                                        </li>
+                                        <li class="card-item">
+                                            <p class="card-text">Paperback</p>
+                                        </li>
+                                        <li class="card-item">
+                                            <p class="card-text">Sep. 18, 2012</p>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-secondary">Buy Now</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="pricing-card">
+                                    <h3 class="h3 card-title">Kindle</h3>
+                                    <p id="price" class="price" value="12">$11.99</p>
+                                    <ul class="pricing-card-list">
+                                        <li class="card-item">
+                                            <p class="card-text">432 pages</p>
+                                        </li>
+                                        <li class="card-item">
+                                            <p class="card-text">Kindle</p>
+                                        </li>
+                                        <li class="card-item">
+                                            <p class="card-text">Feb. 15, 2012</p>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary">Buy Now</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="pricing-card">
+                                    <h3 class="h3 card-title">Hardcover</h3>
+                                    <data class="price" value="19">$18.40</data>
+                                    <ul class="pricing-card-list">
+                                        <li class="card-item">
+                                            <p class="card-text">480 pages</p>
+                                        </li>
+                                        <li class="card-item">
+                                            <p class="card-text">Hardcover</p>
+                                        </li>
+                                        <li class="card-item">
+                                            <p class="card-text">Aug. 12, 1986</p>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-secondary">Buy Now</button>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </h2>
+                </div>
+            </section>
+            <!--Pricing Ends -->
+
+            <!--Author Starts-->
+            <section class="section author" id="author">
+                <div class="container">
+                    <figure class="author-banner img-holder" style="--width: 700; --height:720;">
+                        <img src="./asset/images/jrr-tolkien.jpg" width="122" height="122" loading="lazy" alt="Image of Book Author" class="img-cover">
+                    </figure>
+
+                    <div class="author-content">
+                        <p class="section-subtitle">The Author</p>
+                        <h2 class="h2 section-title">JRR Tolkien</h2>
+                        <p class="author-name">Style: High Fantasy</p>
+                        <div class="section-text">
+                            John Ronald Reuel Tolkien CBE FRSL was an English writer and philologist. He was the author of the high fantasy works The Hobbit and The Lord of the Rings. From 1925 to 1945, Tolkien was the Rawlinson and Bosworth Professor of 
+                            Anglo-Saxon and a Fellow of Pembroke College, both at the University of Oxford.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Author Ends-->
+
+            <!--Achievement Starts-->
+            <section class="section achievement" id="achievment" aria-label="achievment" >
+                <div class="container">
+                    <p class="section-subtitle">Achievments</p>
+                    <h2 class="h2 section-title has-underline">
+                        Awards and Honors achieved
+                        <span class="span has-before"></span>
+                    </h2>
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Nominated" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">Hugo Award for Best Dramatic Presentation <strong>2002</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Winner" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" class="" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">Prometheus Hall of Fame Award <strong>2009</strong></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Guest of Honor" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" class="" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">Goodreads Choice Awards Best Poetry <strong>2013</strong></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Finalist" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" class="" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">Mythopoeic Fantasy Award <strong>1981</strong></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Winner" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" class="" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">International Fantasy Award for Fiction <strong>1957</strong></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Nominated" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" class="" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">Locus Award for Best Fantasy Novel <strong>1978</strong></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Nominated" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" class="" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">Gandalf Award for Book-Length Fantasy <strong>1978</strong></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Nominated" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" class="" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">Hugo Award for Best Dramatic Presentation <strong>2004</strong></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="achievment-card">
+                                <figure class="card-banner img-holder" style="--width:450; --height:300;" >
+                                    <img src="./asset/images/jrr-tolkien.jpg" width="450" height="300" loading="lazy" alt="Image of Honor received by author - Nominated" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <img src="./asset/images/award.svg" width="80" height="80" class="" loading="lazy" alt="Image of award" class="abs-img">
+                                    <h3 class="h3 card-title">Winner</h3>
+                                    <p class="card-text">Gandalf Grand Master Award <strong>1974</strong></p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <!--Achievement Ends-->
+
+            <!--Contact Starts-->
+            <section class="section contact" id="contact">
+                <div class="container">
+                    <p class="section-subtitle">Contact</p>
+                    <h2 class="h2 section-title has-underline">
+                        Write me
+                        <span class="span has-before"></span>
+                    </h2>
+
+                    <div class="wrapper">
+                        <form action="" class="contact-form">
+                            <input type="text" name="name" placeholder="Enter your Name" required class="input-field">
+                            <input type="email" name="email_address" placeholder="Enter your Email" required class="input-field">
+                            <input type="text" name="subject" placeholder="Subject" required class="input-field">
+                            <textarea name="message" placeholder="Enter your Message" class="input-field"></textarea>
+                            <button type="submit" class="btn btn-primary">Send email</button>
+
+                        </form>
+
+                        <ul class="contact-card">
+                            <li>
+                                <p class="card-title">Address</p>
+                                <address class="address">
+                                    13, Nepa Quaters <br> Era, Ojo, Lagos, Nigeria
+                                </address>
+                            </li>
+
+                            <li>
+                                <p class="card-title">Phone:</p>
+                                <a href="tel:09034384663" class="card-link">09034384663</a>
+                            </li>
+
+                            <li>
+                                <p class="card-title">Email:</p>
+                                <a href="mailto:zunurainojuolape@gmail.com" target="_blank" class="card-link">zunurainojuolape@gmail.com</a>
+                            </li>
+
+                            <li>
+                                <p class="social-list-title h3">Connect on Socials</p>
+                                <ul class="social-list">
+                                    <li>
+                                        <a href="https://api.whatsapp.com/send?phone=2349034384663" target="_blank" class="social-link">
+                                            <ion-icon name="logo-whatsapp"></ion-icon>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/zunurainojuolape" target="_blank" class="social-link">
+                                            <ion-icon name="logo-linkedin"></ion-icon>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.twitter.com/ZunurainEni29" target="_blank" class="social-link">
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--Contact Ends-->
+
+            <!--Footer Starts-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-top">
+                        <a href="#" class="logo">Oz eBook</a>
+                        <ul class="footer-list">
+                            
+                            <li>
+                                <a href="#hero" class="footer-link">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#benefit" class="footer-link">Benefit</a>
+                            </li>
+
+                            <li>
+                                <a href="#chapter" class="footer-link">Chapter</a>
+                            </li>
+
+                            <li>
+                                <a href="#pricing" class="footer-link">Pricing</a>
+                            </li>
+
+                            <li>
+                                <a href="#author" class="footer-link">Author</a>
+                            </li>
+
+                            <li>
+                                <a href="#achievment" class="footer-link">Achievments</a>
+                            </li>
+
+                            <li>
+                                <a href="#contact" class="footer-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright">&copy; Oz eBook, 2022. All right reserved. Built by <a target="_blank" style="display: inline; color: #834923; "; href="https://www.linkedin.com/in/zunurainojuolape">Zunurain</a></p>
+                    </div>
+                </div>
+            </footer>
+            <!--Footer Ends-->
+
+        </article>
+    </main>
+    <!--Main Content Ends-->
+    
+    <script src="asset/js/app.js" defer></script>
+    <script src="asset/js/analytics.js" defer type="module"></script>
+    <!--Ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" ></script>
+
+</body>
+</html>
