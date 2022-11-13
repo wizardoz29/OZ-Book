@@ -1,15 +1,25 @@
 'use strict';
 
-const bookOfTheWeek = document.getElementById("bookoftheweek");
+const weekBook = document.querySelectorAll(".bookoftheweek");
+const bookAuthor = document.querySelectorAll(".bookauthor");
+const bookImage = document.getElementById("bookbanner");
 const bookOfTheWeekNumber = document.getElementById("bookoftheweeknumber");
+const bookInsides = document.querySelectorAll(".bookinside");
 const bookChapters = document.getElementById("bookchapters");
 
 
 // Change Book Details BOTW
 const changeBookDetails = function(){
-    bookOfTheWeek.innerHTML = "Fellowship of the Ring";
+    for (const book of weekBook) {
+        book.textContent = "Fellowship of The Ring";
+    }
+    for (const name of bookAuthor) {
+        name.innerHTML = "JRR Tolkien";
+    }
+    bookImage.src ="./asset/images/jrr-tolkien.jpg";
     bookOfTheWeekNumber.innerHTML = "1";
     bookChapters.innerHTML = "(22)";
+
 }
 
 changeBookDetails();

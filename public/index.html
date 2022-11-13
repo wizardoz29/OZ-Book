@@ -24,7 +24,7 @@
             <nav id="navbar" class="navbar" data-navbar>
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a href="#hero" class="navbar-link" data-nav-link>Home</a>
+                        <a href="#mainhero" class="navbar-link" data-nav-link>Home</a>
                     </li>
                     <li class="navbar-item">
                         <a href="#benefit" class="navbar-link" data-nav-link>Benefit</a>
@@ -47,9 +47,9 @@
                     <li class="navbar-item">
                         <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
                     </li>
-                    <div class="searchbar has-before">
+                    <!-- <div class="searchbar has-before">
                         <input type="search" name="search books" id="search" class="search" placeholder="Search">
-                    </div>
+                    </div> -->
                 </ul>
             </nav>
 
@@ -66,45 +66,116 @@
     <main>
         <article>
 
+            <!--Main Hero Starts-->
+            <section class="mainhero" id="mainhero">
+                <div class="container">
+                    <div class="mainhero-content">
+                        <!-- <figure class="mainhero-image">
+                            <img src="./asset/images/achievement-4.jpg" class="cover" alt="Image of a book Library filled with books">
+                        </figure> -->
+                        <div class="overlay"></div>
+                        <!-- <figcaption class="nowrap" >Image of a book Library filled with books</figcaption> -->
+
+
+                        <div class="copy">
+                            <h1 class="mainhero-text" id="mainhero-text">Discover Books You Love, Easily</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Main Hero Ends-->
+
+            <!--About Starts -->
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about-container" id="about-container">
+                        <figure class="aboutimage img-holder" style="--width: 350; --height: 360" >
+                            <img src="./asset/images/author-banner.png" alt="Illustration of a question" class="aboutimg" id="aboutimg">
+                        </figure>
+
+                        <!-- <div class="abouttext-holder">
+                            <h4 class="about-text" id="about-text">Oz Book is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, dolor Lorem ipsum dolor sit. </h4>
+                        </div> -->
+
+                        <div class="chapters-card" id="about-card">
+                            <p class="card-subtitle">About Us</p>
+                            <h3 class="h2 card-title">What We Offer</h3>
+                            <p class="about-text"><br>Oz Book is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, dolor Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, velit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--About Ends -->
+
+            <!-- Oz Book Benefits Starts -->
+            <section class="ozbenefit" id="ozbenefit">
+                <div class="container">
+                    <div class="ozbenefit-container" id="ozbenefit-container">
+                        <figure class="ozbenefitimage img-holder" style="--width: 350; --height: 360" >
+                            <img src="./asset/images/author-banner.png" alt="Illustration of a question" class="ozbenefitimg" id="ozbenefitimg">
+                        </figure>
+
+                        <div class="chapters-card" id="ozbenefit-card">
+                            <!-- <h3 class="h2 card-title">What We Offer</h3> -->
+                            <p class="ozbenefit-text">Oz Book is Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ozbenefit-container" id="ozbenefit-container">
+                        <figure class="ozbenefitimage img-holder" style="--width: 350; --height: 360" >
+                            <img src="./asset/images/author-banner.png" alt="Illustration of a question" class="ozbenefitimg" id="ozbenefitimg">
+                        </figure>
+
+                        <div class="chapters-card" id="ozbenefit-card">
+                            <!-- <h3 class="h2 card-title">What We Offer</h3> -->
+                            <p class="ozbenefit-text">Oz Book is Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="ozbenefit-container" id="ozbenefit-container">
+                        <figure class="ozbenefitimage img-holder" style="--width: 350; --height: 360" >
+                            <img src="./asset/images/author-banner.png" alt="Illustration of a question" class="ozbenefitimg" id="ozbenefitimg">
+                        </figure>
+
+                        <div class="chapters-card" id="ozbenefit-card">
+                            <!-- <h3 class="h2 card-title">What We Offer</h3> -->
+                            <p class="ozbenefit-text">Oz Book is Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Oz Book Benefits Ends -->
+
+            <!--Search Starts -->
+            <section class="searcharea" id="searcharea">
+                <div class="container">
+                    <input type="search" id="booksearch" class="search" name="booksearch" id="booksearch" placeholder="Search Books and Get Info About It" >
+                </div>
+            </section>
+            <!--Search Ends -->
+
             <!--Hero Starts -->
             <section class="section hero" id="hero" aria-label="home">
                 <div class="container">
                     <div class="hero-content">
-                        <p class="section-subtitle">
+                        <!-- <p class="section-subtitle">
                             Reviews, Summaries, Downloads
-                        </p>
+                        </p> -->
 
-                        <h1 class="h1 hero-title">Access Knowledge in Books</h1>
+                        <h1 class="h1 hero-title"><span id="bookoftheweek" class="bookoftheweek" data-week-book></span></h1>
 
                         <p class="section-text">
-                            Love books like i do? Here's your hub 
+                            By <span id="bookauthor" class="bookauthor">By JRR Tolkien</span>
                         </p>
 
                     </div>
 
                     <div class="hero-banner has-before">
-                        <img src="./asset/images/hero-banner.gif" width="250"  height="419" alt="Novel Cover of Fellowship of the Rings " class="w-100">
+                        <img src="./asset/images/hero-banner.gif" width="250"  height="419" alt="Novel Cover of Fellowship of the Rings" id="bookbanner" class="w-100">
 
                         <!-- <button class="play-btn has-before" aria-label="play video" >
                             <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
                         </button> -->
-                    </div>
-
-
-                    <div class="imagecategory">
-                        
-                        <figure class="categories img-holder" style="--height:150";>
-                            <h3 class="categorytext fantasy">Fantasy</h3>
-                            <div class="overlay"></div>
-                            <img src="./asset/images/achievement-1.jpg" loading="lazy" width="450" height="300" class="categoryimg" alt="Fantasy Category">
-                        </figure>
-
-                        <figure class="categories img-holder" style="--height:150";>
-                            <h3 class="categorytext adventure">Adventure</h3>
-                            <div class="overlay"></div>
-                            <img src="./asset/images/achievement-1.jpg" loading="lazy" width="450" height="300" class="categoryimg" alt="Adventure Category">
-                        </figure>
-
                     </div>
 
                 </div>
@@ -116,9 +187,9 @@
                     <div class="container">
                         <div class="grid-list">
                             <li class="benefits-content">
-                                <h2 class="h2 section-title">What <span style="display: inline"; id="bookoftheweek" class="bookoftheweek">"Book of the Week"</span> offers</h2>
+                                <h2 class="h2 section-title" >Inside <span  id="bookoftheweek" class="bookoftheweek" data-week-book></span></h2>
 
-                                <p class="section-text">Oz Book of the week -- <span style="display: inline"; id="bookoftheweeknumber" class="bookoftheweeknumber"></span> </p>
+                                <p class="section-text">Oz Book of the week <strong><span  id="bookoftheweeknumber" class="bookoftheweeknumber"></span></strong>  </p>
                             </li>
 
                             <li>
@@ -128,7 +199,7 @@
                                     </div>
                                 </div> -->
 
-                                <h3 class="h3 card-title">Motivation</h3>
+                                <h3 class="h3 card-title bookinside">Motivation</h3>
 
                                 <p class="card-text">
                                     <br> Even the smallest person can change the course of the future. Never underestimate yourself. You never know the impact of the work that you do.
@@ -148,7 +219,7 @@
                                     </div>
                                 </div> -->
 
-                                <h3 class="h3 card-title">Experience</h3>
+                                <h3 class="h3 card-title bookinside">Experience</h3>
 
                                 <p class="card-text">
                                     <br> This is the height of high fantasy. It gives it's readers a very pleasant reading experience
@@ -417,7 +488,7 @@
 
                     <div class="author-content">
                         <p class="section-subtitle">The Author</p>
-                        <h2 class="h2 section-title">JRR Tolkien</h2>
+                        <h2 class="h2 section-title bookauthor">JRR Tolkien</h2>
                         <p class="author-name">Style: High Fantasy</p>
                         <div class="section-text">
                             John Ronald Reuel Tolkien CBE FRSL was an English writer and philologist. He was the author of the high fantasy works The Hobbit and The Lord of the Rings. From 1925 to 1945, Tolkien was the Rawlinson and Bosworth Professor of 

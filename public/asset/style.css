@@ -110,6 +110,16 @@ body{
   line-height: 1.8;
 }
 
+.overlay{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* .bookoftheweek::before { content: "Fellowship Of The Ring"; } */
+
 :focus-visible{
   outline-offset: 4px;
 }
@@ -119,7 +129,7 @@ body{
   color: var(--white);
 }
 
-::-webkit-scrollbar{ width: 1.8rem };
+::-webkit-scrollbar{ width: 1.5rem };
 
 ::-webkit-scrollbar-track { background-color:  hsl(0, 0%, 98%); }
 
@@ -355,6 +365,158 @@ body{
 .navbar-link:is(:hover, :focus){ color: var(--old-rose) };
 
 
+
+
+/*----------------*\
+  MainHero section
+\*----------------*/
+
+.mainhero{
+  text-align: center;
+  /* margin-bottom: 100px; */
+  /* width: 100%; */
+  /* height: 40vh; */
+  /* margin-block-start: calc(var(--section-padding)  + 60px); */
+}
+
+.mainhero .container{ 
+  height: 450px;
+  max-width: 100vw;
+  margin-block-end: 1rem;
+  position: relative;
+  background-image: url(./images/achievement-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainhero .mainhero-content { 
+  display: flex; 
+}
+
+.mainhero .overlay{
+  /* width: 100%; */
+  position: absolute;
+  left: -5px;
+  z-index: 1;
+
+  /* background-color: rgba(61, 68, 107, 0.596); */
+  /* width: 100%;*/
+  /* padding-block-end: 50px; */
+}
+
+.mainhero .copy{
+  z-index: 5;
+  max-width: 450px;
+  margin-inline: auto;
+  margin-top: 12rem;
+  
+}
+
+.mainhero .mainhero-text {
+  font-size: var(--fs-3);
+  z-index: 20;
+  color: var(--seashell);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-block-start: 3rem;
+  text-shadow: 2px 2px 4px var(--chinese-violet-30);
+}
+
+
+
+/*----------------*\
+  About section
+\*----------------*/
+
+.about{ background-color: var(--seashell); }
+
+.about .about-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-block-start: 4rem;
+  padding-block-start: 4rem;
+  margin-block-end: 7rem;
+}
+
+.about-container .chapters-card { background-color: var(--seashell); }
+
+.about-container .aboutimage{
+  max-width: 100vw;
+  background-color: var(--seashell);
+}
+
+.about-container .aboutimg{ 
+  max-width: 95%;
+  margin-inline: auto;
+}
+
+.about-container #about-card:is(:hover, :focus) { transform: none; }
+
+#about-card .card-subtitle{ font-size: var(--fs-5); }
+
+
+
+
+/*----------------*\
+  Ozbenefit section
+\*----------------*/
+
+
+.ozbenefit .container{ 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.ozbenefit-container .ozbenefitimage { 
+  max-width: 100vw;
+  background-color: var(--white);
+}
+
+.ozbenefit-container .ozbenefitimg {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+.ozbenefit-container #ozbenefit-card:is(:hover, :focus) { transform: none; } 
+
+
+
+/*--------------------*\
+  Searcharea section
+\*--------------------*/
+
+
+.searcharea{
+  /* margin-block-end: 5rem; */
+  margin-bottom: 15rem;
+  margin-block-start: 3rem;
+}
+
+.searcharea .container{
+  width: 95%;
+  margin-inline: auto;
+  /* margin-block-end: 2rem; */
+  padding-block-end: 4rem;
+
+}
+
+.searcharea .container .search{
+  min-width: 100%;
+  margin-inline: auto;
+  border-radius: 14px;
+  border: 3px solid var(--old-rose);
+}
+
+
+
+
+
+
 /*----------------*\
   Hero section
 \*----------------*/
@@ -363,15 +525,15 @@ body{
 .hero{
   padding-block-start: calc(var(--section-padding)  + 60px);
   text-align: center;
-
 }
 
-.hero .container{ 
+.hero .container{
   display: grid;
   gap: 60px;
   padding-top: 4rem;
 }
 
+.hero span{ display: inline; }
 
 .hero .hero-title {
   margin-block: 10px 25px
@@ -408,47 +570,6 @@ body{
 
 .search:focus { border: 2px solid var(--old-rose) };
 
-.imagecategory{ 
-  display: flex;
- }
-
-.imagecategory .categories{ 
-  max-width: 100%;
-  max-height: 60px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 5px;
-  transition: var(--transition-1);
-  cursor: pointer;
-}
-
-.imagecategory .categories:not(:last-child){ margin-block-end: 20px; }
-
-.imagecategory .categories:is(:hover, :focus){ transform: translateY(-8px); }
-
-.imagecategory .categorytext{
-  position: absolute;
-  top: 15px;
-  left: 5px;
-  color: var(--ghost-white);
-  z-index: 10;
-  letter-spacing: .8px;
-  font-family: var(--poppins);
-}
-
-.overlay{
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.596);
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.imagecategory .categoryimg{
-  max-width: 100%;
-  max-height: 80px;
-  opacity: .7;
-}
 
 
 /* .play-btn{
@@ -481,6 +602,8 @@ body{
   BENEFITS section
 \*----------------*/
 
+
+.benefits span{ display: inline; }
 
 .benefits .section-text{
   text-align: center;
@@ -783,8 +906,6 @@ textarea.input-field{
 
 
 
-
-
 /*-------------------*\
   MEDIA QUERY section
 \*-------------------*/
@@ -888,6 +1009,16 @@ textarea.input-field{
   .imagecategory{ 
     display: none;
   }
+
+  /* About  */
+
+  .about .about-container{ flex-direction: row}
+
+  /* Ozbenefit  */
+  
+  .ozbenefit-container{ display: flex; }
+  
+  .ozbenefit-container:nth-child(2){ flex-direction: row-reverse }
 
  
   /* Benefits  */
